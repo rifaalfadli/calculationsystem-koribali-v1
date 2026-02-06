@@ -171,9 +171,9 @@ export default function Login() {
             <h1 className="text-xl sm:text-2xl font-black text-slate-800 tracking-tight uppercase">
               Login Access
             </h1>
-            <div className="flex items-center gap-3 mt-3">
-              <div className="h-1.5 flex-1 bg-slate-200 rounded-full" />
-              <div className="h-1.5 w-10 bg-[#0d3b66] rounded-full" />
+            <div className="flex items-center gap-1 md:gap-2 mt-3">
+              <div className="h-1.5 flex-1 bg-slate-200 rounded-l-xl" />
+              <div className="h-1.5 w-16 bg-[#0d3b66] rounded-r-xl" />
             </div>
           </div>
 
