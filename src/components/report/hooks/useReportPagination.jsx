@@ -9,6 +9,7 @@ export function useA4Pagination({ blocks, measureRef }) {
 
     const paginate = () => {
       const children = Array.from(measureRef.current.children); // Get all hidden DOM blocks
+      const blockMap = new Map(blocks.map((b) => [b.id, b])); // Build map sekali (O(1) lookup)
       const pagesTemp = []; // Temporary storage for pages
 
       let currentPage = []; // Current page buffer
@@ -25,7 +26,8 @@ export function useA4Pagination({ blocks, measureRef }) {
       children.forEach((child) => {
         const h = child.offsetHeight; // Measured block height
         const id = child.dataset.id; // Block ID to find React node
-        const block = blocks.find((b) => b.id === id); // Match DOM to React block
+        // const block = blocks.find((b) => b.id === id); // Match DOM to React block
+        const block = blockMap.get(id);
         if (!block) return;
 
         if (currentHeight + h > pageLimit) {
@@ -43,9 +45,11 @@ export function useA4Pagination({ blocks, measureRef }) {
       setPages(pagesTemp); // Save paginated pages to state
     };
 
-    document.fonts?.ready
-      ? document.fonts.ready.then(paginate)
-      : setTimeout(paginate, 50); // Wait for fonts to load
+    // document.fonts?.ready
+    //   ? document.fonts.ready.then(paginate)
+    //   : setTimeout(paginate, 50); // Wait for fonts to load
+    // ⚡ run setelah layout paint
+    requestAnimationFrame(paginate);
   }, [blocks, measureRef]);
 
   return pages; // Return paginated pages

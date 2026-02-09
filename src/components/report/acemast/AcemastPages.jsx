@@ -6936,8 +6936,8 @@ export default function AcemastPages({
               <br />
               <div
                 className="ml-[44px] jp tracking-[0.05em]
-                inline-block relative pb-[2px]
-                before:content-[''] before:absolute before:left-0 before:right-0 before:bottom-[2px] before:border-b before:border-black
+                inline-block relative pb-[2.5px]
+                before:content-[''] before:absolute before:left-0 before:right-0 before:bottom-[2.5px] before:border-b before:border-black
                 after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-0 after:border-b after:border-black
               "
               >

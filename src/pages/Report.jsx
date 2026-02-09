@@ -6,7 +6,7 @@ export default function Report() {
     <>
       <div className="flex flex-col min-h-screen">
         <Helmet>
-          <title>Report - CV. KORI BALI</title>
+          <title>Report - KORI BALI</title>
           <meta
             name="report"
             content="Report System CV. KORI BALI menyajikan hasil analisis dan ringkasan data struktur pole secara lengkap."

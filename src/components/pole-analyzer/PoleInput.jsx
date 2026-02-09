@@ -94,7 +94,7 @@ export function PoleInput({ section, onUpdate, errors }) {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
               {/* Straight Diameter */}
               <div className="relative">
-                <label className="block text-gray-600 text-sm mb-2 hp:text-xs hp:mb-1">
+                <label className="block text-gray-700 text-sm mb-2 hp:text-xs hp:mb-1">
                   Diameter Pole
                 </label>
                 <div className="relative">
@@ -106,7 +106,7 @@ export function PoleInput({ section, onUpdate, errors }) {
                     }
                     className={inputClass(errors.diameterLower)}
                   />
-                  <span className="absolute right-4 top-1/2 -translate-y-1/2 text-sm text-black-400 hp:text-xs">
+                  <span className="absolute right-4 text-sm top-1/2 -translate-y-1/2 text-black-400 hp:text-xs">
                     mm
                   </span>
                 </div>
@@ -115,7 +115,7 @@ export function PoleInput({ section, onUpdate, errors }) {
 
               {/* Straight Thickness */}
               <div className="relative">
-                <label className="block text-gray-600 text-sm mb-2 hp:text-xs hp:mb-1">
+                <label className="block text-gray-700 text-sm mb-2 hp:text-xs hp:mb-1">
                   Thickness Pole
                 </label>
                 <div className="relative">
@@ -127,7 +127,7 @@ export function PoleInput({ section, onUpdate, errors }) {
                     }
                     className={inputClass(errors.thicknessLower)}
                   />
-                  <span className="absolute right-4 top-1/2 -translate-y-1/2 text-sm text-black-400 hp:text-xs">
+                  <span className="absolute right-4 text-sm top-1/2 -translate-y-1/2 text-black-400 hp:text-xs">
                     mm
                   </span>
                 </div>
@@ -139,7 +139,7 @@ export function PoleInput({ section, onUpdate, errors }) {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
               {/* Diameter Lower */}
               <div className="relative">
-                <label className="block text-gray-600 mb-2 hp:text-xs hp:mb-1">
+                <label className="block text-gray-700 text-sm mb-2 hp:text-xs hp:mb-1">
                   Diameter Lower
                 </label>
                 <div className="relative">
@@ -151,7 +151,7 @@ export function PoleInput({ section, onUpdate, errors }) {
                     }
                     className={inputClass(errors.diameterLower)}
                   />
-                  <span className="absolute right-4 top-1/2 -translate-y-1/2 text-black-400 hp:text-xs">
+                  <span className="absolute right-4 text-sm top-1/2 -translate-y-1/2 text-black-400 hp:text-xs">
                     mm
                   </span>
                 </div>
@@ -160,7 +160,7 @@ export function PoleInput({ section, onUpdate, errors }) {
 
               {/* Diameter Upper */}
               <div className="relative">
-                <label className="block text-gray-600 mb-2 hp:text-xs hp:mb-1">
+                <label className="block text-gray-700 text-sm mb-2 hp:text-xs hp:mb-1">
                   Diameter Upper
                 </label>
                 <div className="relative">
@@ -172,7 +172,7 @@ export function PoleInput({ section, onUpdate, errors }) {
                     }
                     className={inputClass(errors.diameterUpper)}
                   />
-                  <span className="absolute right-4 top-1/2 -translate-y-1/2 text-black-400 hp:text-xs">
+                  <span className="absolute right-4 text-sm top-1/2 -translate-y-1/2 text-black-400 hp:text-xs">
                     mm
                   </span>
                 </div>
@@ -181,7 +181,7 @@ export function PoleInput({ section, onUpdate, errors }) {
 
               {/* Thickness Lower */}
               <div className="relative">
-                <label className="block text-gray-600 mb-2 hp:text-xs hp:mb-1">
+                <label className="block text-gray-700 text-sm mb-2 hp:text-xs hp:mb-1">
                   Thickness Lower
                 </label>
                 <div className="relative">
@@ -193,7 +193,7 @@ export function PoleInput({ section, onUpdate, errors }) {
                     }
                     className={inputClass(errors.thicknessLower)}
                   />
-                  <span className="absolute right-4 top-1/2 -translate-y-1/2 text-black-400 hp:text-xs">
+                  <span className="absolute right-4 text-sm top-1/2 -translate-y-1/2 text-black-400 hp:text-xs">
                     mm
                   </span>
                 </div>
@@ -202,7 +202,7 @@ export function PoleInput({ section, onUpdate, errors }) {
 
               {/* Thickness Upper */}
               <div className="relative">
-                <label className="block text-gray-600 mb-2 hp:text-xs hp:mb-1">
+                <label className="block text-gray-700 text-sm mb-2 hp:text-xs hp:mb-1">
                   Thickness Upper
                 </label>
                 <div className="relative">
@@ -214,7 +214,7 @@ export function PoleInput({ section, onUpdate, errors }) {
                     }
                     className={inputClass(errors.thicknessUpper)}
                   />
-                  <span className="absolute right-4 top-1/2 -translate-y-1/2 text-black-400 hp:text-xs">
+                  <span className="absolute right-4 text-sm top-1/2 -translate-y-1/2 text-black-400 hp:text-xs">
                     mm
                   </span>
                 </div>

@@ -39,7 +39,7 @@ export default function LightingPoleReport({
         ref={measureRef}
         style={{
           position: "fixed",
-          top: "-10000px",
+          top: "-1000000px",
           left: 0,
           visibility: "hidden",
           width: "210mm",
