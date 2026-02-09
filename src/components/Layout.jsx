@@ -508,7 +508,7 @@ export default function Layout({ children }) {
           <div className="max-w-[1600px] mx-auto">{children}</div>
         </main>
 
-        <footer className="py-4 px-6 lg:px-8 border-t border-slate-200 text-center lg:text-left text-[10px] text-slate-400 font-bold uppercase tracking-widest">
+        <footer className="py-4 px-6 lg:px-8 border-t border-slate-200 text-center text-[10px] text-slate-400 font-bold uppercase tracking-widest">
           &copy; {new Date().getFullYear()} KORI BALI &bull; Pole Structure
           Calculation System
         </footer>
