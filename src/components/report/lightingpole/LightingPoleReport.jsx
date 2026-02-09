@@ -35,16 +35,7 @@ export default function LightingPoleReport({
       />
 
       {/* Reference to this hidden container for measuring each block's height */}
-      <div
-        ref={measureRef}
-        style={{
-          position: "fixed",
-          top: "-1000000px",
-          left: 0,
-          visibility: "hidden",
-          width: "210mm",
-        }}
-      >
+      <div ref={measureRef} className="measure-container">
         {/* Hidden measurement container off-screen to calculate block heights */}
         {blocks.map((b) => (
           <div key={b.id} data-id={b.id} className="measure-block">

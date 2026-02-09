@@ -259,6 +259,16 @@
   border-bottom: 1.5px solid #000;
 }
 
+/* ====== Measurement container (screen only) ====== */
+.measure-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 210mm;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: -1;
+}
 @media screen and (max-width: 500px) {
   .page-preview {
     transform: scale(0.446);
@@ -295,6 +305,10 @@
   .cover-row-3,
   .cover-inner-text {
     color: black;
+  }
+
+  .measure-container {
+    display: none !important;
   }
 
   /* .page-content-border {
