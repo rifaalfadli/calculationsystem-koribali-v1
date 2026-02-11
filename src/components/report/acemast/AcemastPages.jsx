@@ -91,7 +91,7 @@ export default function AcemastPages({
             <img
               src="/images/yp-logo.jpg"
               alt="logo YP"
-              className="mx-auto w-[300px]"
+              className="mx-auto w-[300px] h-auto"
             />
           </div>
         </div>

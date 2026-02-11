@@ -71,20 +71,6 @@ export default function Login() {
       onMouseMove={handleMouseMove}
       className="relative min-h-screen bg-[#f8fafc] flex items-center justify-center p-6 font-sans antialiased overflow-hidden"
     >
-      {/* Background Excel Grid Pattern */}
-      <div
-        className="absolute inset-0 z-0 pointer-events-none"
-        style={{
-          backgroundImage: `
-            linear-gradient(to right, #e2e8f0 1px, transparent 1px),
-            linear-gradient(to bottom, #e2e8f0 1px, transparent 1px)
-          `,
-          backgroundSize: "45px 45px",
-          maskImage:
-            "radial-gradient(circle at center, white 50%, transparent 95%)",
-        }}
-      />
-
       {/* Interactive Gradient Spot (Follows Mouse) */}
       <motion.div
         className="pointer-events-none absolute inset-0 z-0 opacity-40"
@@ -104,14 +90,6 @@ export default function Login() {
       >
         {/* --- LEFT PANEL (Hidden on Mobile) --- */}
         <div className="hidden md:flex md:w-[400px] bg-[#0d3b66] p-12 flex flex-col justify-between text-white relative">
-          <div
-            className="absolute inset-0 opacity-[0.03]"
-            style={{
-              backgroundImage: "radial-gradient(#fff 1.5px, transparent 1.5px)",
-              backgroundSize: "24px 24px",
-            }}
-          />
-
           <div className="relative z-10">
             <div className="flex items-center gap-4 mb-16">
               <div className="bg-white p-2 rounded-xl shadow-lg">

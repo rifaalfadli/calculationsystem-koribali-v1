@@ -15,7 +15,7 @@ export const CoverInputModal = ({
   if (!open) return null;
 
   return (
-    <div className="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm flex items-center justify-center">
+    <div className="fixed inset-0 z-50 bg-slate-900/40 backdrop-blur-sm flex items-center justify-center">
       <div className="bg-white rounded-3xl shadow-2xl w-full max-w-3xl mx-4 overflow-hidden animate-fadeIn hp:rounded-xl hp:shadow-xl">
         {/* HEADER */}
         <div className="bg-gradient-to-r from-[#0d3b66] to-[#3399cc] p-4 flex items-center justify-between hp:px-2 hp:py-[8px]">
@@ -57,7 +57,7 @@ export const ConfirmResetAllModal = ({
 }) => {
   if (!confirmResetAll) return null;
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm px-4">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/40 backdrop-blur-sm px-4">
       <div
         className="
           w-full max-w-xs
@@ -76,13 +76,13 @@ export const ConfirmResetAllModal = ({
             bg-red-100 rounded-full
           "
         >
-          <AlertCircle className="w-5 h-5 sm:w-8 sm:h-8 text-red-600" />
+          <AlertCircle className="w-5 h-5 sm:w-8 sm:h-8 text-red-500" />
         </div>
 
         {/* Title */}
         <h2
           className="
-            text-center font-semibold
+            text-center font-bold
             text-sm sm:text-base
             text-gray-900
             mb-1 sm:mb-2
@@ -110,11 +110,11 @@ export const ConfirmResetAllModal = ({
             onClick={onClose}
             className="
               flex-1
-              py-2 sm:py-3
+              py-2 sm:py-3 font-bold
               text-xs sm:text-sm
-              bg-gray-100 text-gray-700
+              bg-slate-100 text-slate-600
               rounded-md sm:rounded-lg
-              hover:bg-gray-200 transition
+              hover:bg-slate-200 transition
             "
           >
             Cancel
@@ -127,11 +127,11 @@ export const ConfirmResetAllModal = ({
             }}
             className="
               flex-1
-              py-2 sm:py-3
+              py-2 sm:py-3 font-bold
               text-xs sm:text-sm
-              bg-red-600 text-white
+              bg-red-500 text-white
               rounded-md sm:rounded-lg
-              hover:bg-red-700 transition
+              hover:bg-red-600 transition
             "
           >
             Reset
@@ -152,7 +152,7 @@ export const ConfirmDeletePoleModal = ({
 }) => {
   if (!confirmDelete) return null;
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm px-4">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/40 backdrop-blur-sm px-4">
       <div
         className="
           w-full max-w-xs
@@ -171,13 +171,13 @@ export const ConfirmDeletePoleModal = ({
             bg-red-100 rounded-full
           "
         >
-          <AlertCircle className="w-5 h-5 sm:w-8 sm:h-8 text-red-600" />
+          <AlertCircle className="w-5 h-5 sm:w-8 sm:h-8 text-red-500" />
         </div>
 
         {/* Title */}
         <h2
           className="
-            text-center font-semibold
+            text-center font-bold
             text-sm sm:text-base
             text-gray-900
             mb-1 sm:mb-2
@@ -205,11 +205,11 @@ export const ConfirmDeletePoleModal = ({
             onClick={onClose}
             className="
               flex-1
-              py-2 sm:py-3
+              py-2 sm:py-3 font-bold
               text-xs sm:text-sm
-              bg-gray-100 text-gray-700
+              bg-slate-100 text-slate-600
               rounded-md sm:rounded-lg
-              hover:bg-gray-200 transition
+              hover:bg-slate-200 transition
             "
           >
             Cancel
@@ -222,11 +222,11 @@ export const ConfirmDeletePoleModal = ({
             }}
             className="
               flex-1
-              py-2 sm:py-3
+              py-2 sm:py-3 font-bold
               text-xs sm:text-sm
-              bg-red-600 text-white
+              bg-red-500 text-white
               rounded-md sm:rounded-lg
-              hover:bg-red-700 transition
+              hover:bg-red-600 transition
             "
           >
             Delete
@@ -247,7 +247,7 @@ export const ConfirmDeleteDoModal = ({
 }) => {
   if (!confirmDelete) return null;
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm px-4">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/40 backdrop-blur-sm px-4">
       <div
         className="
           w-full max-w-xs
@@ -266,13 +266,13 @@ export const ConfirmDeleteDoModal = ({
             bg-red-100 rounded-full
           "
         >
-          <AlertCircle className="w-5 h-5 sm:w-8 sm:h-8 text-red-600" />
+          <AlertCircle className="w-5 h-5 sm:w-8 sm:h-8 text-red-500" />
         </div>
 
         {/* Title */}
         <h2
           className="
-            text-center font-semibold
+            text-center font-bold
             text-sm sm:text-base
             text-gray-900
             mb-1 sm:mb-2
@@ -300,11 +300,11 @@ export const ConfirmDeleteDoModal = ({
             onClick={onClose}
             className="
               flex-1
-              py-2 sm:py-3
+              py-2 sm:py-3 font-bold
               text-xs sm:text-sm
-              bg-gray-100 text-gray-700
+              bg-slate-100 text-slate-600
               rounded-md sm:rounded-lg
-              hover:bg-gray-200 transition
+              hover:bg-slate-200 transition
             "
           >
             Cancel
@@ -317,11 +317,11 @@ export const ConfirmDeleteDoModal = ({
             }}
             className="
               flex-1
-              py-2 sm:py-3
+              py-2 sm:py-3 font-bold
               text-xs sm:text-sm
-              bg-red-600 text-white
+              bg-red-500 text-white
               rounded-md sm:rounded-lg
-              hover:bg-red-700 transition
+              hover:bg-red-600 transition
             "
           >
             Delete
@@ -342,7 +342,7 @@ export const ConfirmReduceDoModal = ({
 }) => {
   if (!confirmReduceDo) return null;
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm px-4">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/40 backdrop-blur-sm px-4">
       <div
         className="
           w-full max-w-xs
@@ -361,13 +361,13 @@ export const ConfirmReduceDoModal = ({
             bg-red-100 rounded-full
           "
         >
-          <AlertCircle className="w-5 h-5 sm:w-8 sm:h-8 text-red-600" />
+          <AlertCircle className="w-5 h-5 sm:w-8 sm:h-8 text-red-500" />
         </div>
 
         {/* Title */}
         <h2
           className="
-            text-center font-semibold
+            text-center font-bold
             text-sm sm:text-base
             text-gray-900
             mb-1 sm:mb-2
@@ -397,11 +397,11 @@ export const ConfirmReduceDoModal = ({
             onClick={cancelReduceDirectObjects}
             className="
               flex-1
-              py-2 sm:py-3
+              py-2 sm:py-3 font-bold
               text-xs sm:text-sm
-              bg-gray-100 text-gray-700
+              bg-slate-100 text-slate-600
               rounded-md sm:rounded-lg
-              hover:bg-gray-200 transition
+              hover:bg-slate-200 transition
             "
           >
             Cancel
@@ -411,11 +411,11 @@ export const ConfirmReduceDoModal = ({
             onClick={confirmReduceDirectObjects}
             className="
               flex-1
-              py-2 sm:py-3
+              py-2 sm:py-3 font-bold
               text-xs sm:text-sm
-              bg-red-600 text-white
+              bg-red-500 text-white
               rounded-md sm:rounded-lg
-              hover:bg-red-700 transition
+              hover:bg-red-600 transition
             "
           >
             Delete
@@ -436,7 +436,7 @@ export const ConfirmDeleteOhwModal = ({
 }) => {
   if (!confirmDelete) return null;
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm px-4">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/40 backdrop-blur-sm px-4">
       <div
         className="
           w-full max-w-xs
@@ -455,13 +455,13 @@ export const ConfirmDeleteOhwModal = ({
             bg-red-100 rounded-full
           "
         >
-          <AlertCircle className="w-5 h-5 sm:w-8 sm:h-8 text-red-600" />
+          <AlertCircle className="w-5 h-5 sm:w-8 sm:h-8 text-red-500" />
         </div>
 
         {/* Title */}
         <h2
           className="
-            text-center font-semibold
+            text-center font-bold
             text-sm sm:text-base
             text-gray-900
             mb-1 sm:mb-2
@@ -489,11 +489,11 @@ export const ConfirmDeleteOhwModal = ({
             onClick={onClose}
             className="
               flex-1
-              py-2 sm:py-3
+              py-2 sm:py-3 font-bold
               text-xs sm:text-sm
-              bg-gray-100 text-gray-700
+              bg-slate-100 text-slate-600
               rounded-md sm:rounded-lg
-              hover:bg-gray-200 transition
+              hover:bg-slate-200 transition
             "
           >
             Cancel
@@ -506,11 +506,11 @@ export const ConfirmDeleteOhwModal = ({
             }}
             className="
               flex-1
-              py-2 sm:py-3
+              py-2 sm:py-3 font-bold
               text-xs sm:text-sm
-              bg-red-600 text-white
+              bg-red-500 text-white
               rounded-md sm:rounded-lg
-              hover:bg-red-700 transition
+              hover:bg-red-600 transition
             "
           >
             Delete
@@ -531,7 +531,7 @@ export const ConfirmReduceOhwModal = ({
 }) => {
   if (!confirmReduceOhw) return null;
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm px-4">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/40 backdrop-blur-sm px-4">
       <div
         className="
           w-full max-w-xs
@@ -550,13 +550,13 @@ export const ConfirmReduceOhwModal = ({
             bg-red-100 rounded-full
           "
         >
-          <AlertCircle className="w-5 h-5 sm:w-8 sm:h-8 text-red-600" />
+          <AlertCircle className="w-5 h-5 sm:w-8 sm:h-8 text-red-500" />
         </div>
 
         {/* Title */}
         <h2
           className="
-            text-center font-semibold
+            text-center font-bold
             text-sm sm:text-base
             text-gray-900
             mb-1 sm:mb-2
@@ -586,11 +586,11 @@ export const ConfirmReduceOhwModal = ({
             onClick={cancelReduceOverheadWires}
             className="
               flex-1
-              py-2 sm:py-3
+              py-2 sm:py-3 font-bold
               text-xs sm:text-sm
-              bg-gray-100 text-gray-700
+              bg-slate-100 text-slate-600
               rounded-md sm:rounded-lg
-              hover:bg-gray-200 transition
+              hover:bg-slate-200 transition
             "
           >
             Cancel
@@ -600,11 +600,11 @@ export const ConfirmReduceOhwModal = ({
             onClick={confirmReduceOverheadWires}
             className="
               flex-1
-              py-2 sm:py-3
+              py-2 sm:py-3 font-bold
               text-xs sm:text-sm
-              bg-red-600 text-white
+              bg-red-500 text-white
               rounded-md sm:rounded-lg
-              hover:bg-red-700 transition
+              hover:bg-red-600 transition
             "
           >
             Delete
@@ -621,32 +621,32 @@ export const ConfirmReduceOhwModal = ({
 export const ToastModal = ({ toast, onClose }) => {
   if (!toast) return null;
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm px-4 transition-opacity duration-300">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/40 backdrop-blur-sm px-4 transition-opacity duration-300">
       <div
         className="
-      bg-white
-      w-full max-w-xs
-      sm:max-w-fit
-      rounded-2xl sm:rounded-3xl
-      shadow-[0_10px_40px_rgba(0,0,0,0.15)]
-      p-4 sm:p-7
-      transform transition-all duration-300
-      scale-100 sm:scale-95
-      animate-fadeIn
-    "
+          bg-white
+          w-full max-w-xs
+          sm:max-w-fit
+          rounded-2xl sm:rounded-3xl
+          shadow-[0_10px_40px_rgba(0,0,0,0.15)]
+          p-4 sm:p-7
+          transform transition-all duration-300
+          scale-100 sm:scale-95
+          animate-fadeIn
+        "
       >
         {/* Content */}
         <div className="flex items-center gap-3 mb-4 sm:mb-6">
           {/* Icon */}
           <div
             className="
-          flex-shrink-0
-          flex items-center justify-center
-          w-9 h-9 sm:w-12 sm:h-12
-          rounded-lg sm:rounded-xl
-          bg-yellow-50 text-yellow-500
-          border border-yellow-300
-        "
+              flex-shrink-0
+              flex items-center justify-center
+              w-9 h-9 sm:w-12 sm:h-12
+              rounded-lg sm:rounded-xl
+              bg-yellow-50 text-yellow-500
+              border border-yellow-300
+            "
           >
             <AlertCircle className="w-5 h-5 sm:w-7 sm:h-7" />
           </div>
@@ -654,11 +654,11 @@ export const ToastModal = ({ toast, onClose }) => {
           {/* Message */}
           <p
             className="
-          text-gray-700
-          text-xs sm:text-[16px]
-          font-medium
-          leading-snug
-        "
+              text-gray-700
+              text-xs sm:text-[16px]
+              font-semibold
+              leading-snug
+            "
           >
             {toast.message}
           </p>
@@ -669,17 +669,17 @@ export const ToastModal = ({ toast, onClose }) => {
           <button
             onClick={onClose}
             className="
-          px-4 py-2 sm:px-6 sm:py-3
-          rounded-md sm:rounded-lg
-          bg-blue-50 border border-blue-500
-          text-blue-700
-          text-xs sm:text-sm
-          font-semibold
-          hover:bg-blue-100
-          transition-all
-          shadow-sm
-          active:scale-95
-        "
+              px-4 py-2 sm:px-6 sm:py-3
+              rounded-md sm:rounded-lg
+              bg-blue-50 border border-blue-500
+              text-blue-700
+              text-xs sm:text-sm
+              font-semibold
+              hover:bg-blue-100
+              transition-all
+              shadow-sm
+              active:scale-95
+            "
           >
             OK
           </button>

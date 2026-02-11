@@ -289,7 +289,7 @@ export function ReportPage() {
 
       {/* Delete Confirmation Modal */}
       {showDeleteConfirm && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm px-4">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/40 backdrop-blur-sm px-4">
           <div
             className="
               w-full max-w-xs
@@ -308,12 +308,12 @@ export function ReportPage() {
                 bg-red-100 rounded-full
               "
             >
-              <AlertCircle className="w-5 h-5 sm:w-8 sm:h-8 text-red-600" />
+              <AlertCircle className="w-5 h-5 sm:w-8 sm:h-8 text-red-500" />
             </div>
             {/* Title */}
             <h2
               className="
-                text-center font-semibold
+                text-center font-bold
                 text-sm sm:text-base
                 text-gray-900
                 mb-1 sm:mb-2
@@ -341,11 +341,11 @@ export function ReportPage() {
                 onClick={() => setShowDeleteConfirm(false)}
                 className="
                   flex-1
-                  py-2 sm:py-3
+                  py-2 sm:py-3 font-bold
                   text-xs sm:text-sm
-                  bg-gray-100 text-gray-700
+                  bg-slate-100 text-slate-600
                   rounded-md sm:rounded-lg
-                  hover:bg-gray-200 transition
+                  hover:bg-slate-200 transition
                 "
               >
                 Cancel
@@ -355,11 +355,11 @@ export function ReportPage() {
                 onClick={handleDelete}
                 className="
                   flex-1
-                  py-2 sm:py-3
+                  py-2 sm:py-3 font-bold
                   text-xs sm:text-sm
-                  bg-red-600 text-white
+                  bg-red-500 text-white
                   rounded-md sm:rounded-lg
-                  hover:bg-red-700 transition
+                  hover:bg-red-600 transition
                 "
               >
                 Delete
