@@ -91,6 +91,7 @@ export function ConditionInput({ condition, onUpdate, onNext, errors }) {
                 type="number"
                 value={condition.windSpeed}
                 onChange={(e) => onUpdate({ windSpeed: e.target.value })}
+                onWheel={(e) => e.target.blur()}
                 className={`${inputClass(errors.windSpeed)} hp:px-3`}
               />
               <span className="absolute right-4 top-1/2 -translate-y-1/2 text-sm text-black-400 hp:text-xs">

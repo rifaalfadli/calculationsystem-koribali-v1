@@ -93,6 +93,7 @@ export function OverheadWireInput({
               placeholder="OHW Count"
               value={ohwInputValue}
               onChange={(e) => setOhwInputValue(e.target.value)}
+              onWheel={(e) => e.target.blur()}
               className="
                 w-[180px] px-7 py-2.5 text-center text-sm rounded-lg outline-none
                 transition-all border border-[#3399cc] bg-white
@@ -348,6 +349,7 @@ export function OverheadWireInput({
                           weightOhw: e.target.value,
                         })
                       }
+                      onWheel={(e) => e.target.blur()}
                       className={`${inputClass(ohwError.weightOhw)} pr-10 hp:pr-10`}
                     />
                     <span className="absolute right-2 top-1/2 -translate-y-1/2 text-xs text-black-400">
@@ -371,6 +373,7 @@ export function OverheadWireInput({
                           diameterOhw: e.target.value,
                         })
                       }
+                      onWheel={(e) => e.target.blur()}
                       className={`${inputClass(ohwError.diameterOhw)} pr-8 hp:pr-8`}
                     />
                     <span className="absolute right-2 top-1/2 -translate-y-1/2 text-xs text-black-400">
@@ -397,6 +400,7 @@ export function OverheadWireInput({
                           fixheightOhw: e.target.value,
                         })
                       }
+                      onWheel={(e) => e.target.blur()}
                       className={`${inputClass(ohwError.fixheightOhw)} pr-8 hp:pr-8`}
                     />
                     <span className="absolute right-2 top-1/2 -translate-y-1/2 text-xs text-black-400">
@@ -423,6 +427,7 @@ export function OverheadWireInput({
                           spanOhw: e.target.value,
                         })
                       }
+                      onWheel={(e) => e.target.blur()}
                       className={`${inputClass(ohwError.spanOhw)} pr-8 hp:pr-8`}
                     />
                     <span className="absolute right-2 top-1/2 -translate-y-1/2 text-xs text-black-400">
@@ -446,6 +451,7 @@ export function OverheadWireInput({
                           saggingOhw: e.target.value,
                         })
                       }
+                      onWheel={(e) => e.target.blur()}
                       className={`${inputClass(ohwError.saggingOhw)} pr-4 hp:pr-4`}
                     />
                     <span className="absolute right-2 top-1/2 -translate-y-1/2 text-xs text-black-400">
@@ -468,6 +474,7 @@ export function OverheadWireInput({
                         nncOhw: e.target.value,
                       })
                     }
+                    onWheel={(e) => e.target.blur()}
                     className={`${inputClass(ohwError.nncOhw)}`}
                   />
                   <ErrorText show={ohwError.nncOhw} text="Required field" />
@@ -487,6 +494,7 @@ export function OverheadWireInput({
                           fixAngleOhw: e.target.value,
                         })
                       }
+                      onWheel={(e) => e.target.blur()}
                       className={`${inputClass(ohwError.fixAngleOhw)} pr-8 hp:pr-8`}
                     />
                     <span className="absolute right-2 top-1/2 -translate-y-1/2 text-xs text-black-400">
@@ -513,6 +521,7 @@ export function OverheadWireInput({
                           verticalAngleOhw: e.target.value,
                         })
                       }
+                      onWheel={(e) => e.target.blur()}
                       className={`${inputClass(
                         ohwError.verticalAngleOhw,
                       )} pr-8 hp:pr-8`}

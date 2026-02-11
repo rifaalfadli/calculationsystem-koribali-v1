@@ -104,6 +104,7 @@ export function PoleInput({ section, onUpdate, errors }) {
                     onChange={(e) =>
                       onUpdate({ diameterLower: e.target.value })
                     }
+                    onWheel={(e) => e.target.blur()}
                     className={inputClass(errors.diameterLower)}
                   />
                   <span className="absolute right-4 text-sm top-1/2 -translate-y-1/2 text-black-400 hp:text-xs">
@@ -125,6 +126,7 @@ export function PoleInput({ section, onUpdate, errors }) {
                     onChange={(e) =>
                       onUpdate({ thicknessLower: e.target.value })
                     }
+                    onWheel={(e) => e.target.blur()}
                     className={inputClass(errors.thicknessLower)}
                   />
                   <span className="absolute right-4 text-sm top-1/2 -translate-y-1/2 text-black-400 hp:text-xs">
@@ -149,6 +151,7 @@ export function PoleInput({ section, onUpdate, errors }) {
                     onChange={(e) =>
                       onUpdate({ diameterLower: e.target.value })
                     }
+                    onWheel={(e) => e.target.blur()}
                     className={inputClass(errors.diameterLower)}
                   />
                   <span className="absolute right-4 text-sm top-1/2 -translate-y-1/2 text-black-400 hp:text-xs">
@@ -170,6 +173,7 @@ export function PoleInput({ section, onUpdate, errors }) {
                     onChange={(e) =>
                       onUpdate({ diameterUpper: e.target.value })
                     }
+                    onWheel={(e) => e.target.blur()}
                     className={inputClass(errors.diameterUpper)}
                   />
                   <span className="absolute right-4 text-sm top-1/2 -translate-y-1/2 text-black-400 hp:text-xs">
@@ -191,6 +195,7 @@ export function PoleInput({ section, onUpdate, errors }) {
                     onChange={(e) =>
                       onUpdate({ thicknessLower: e.target.value })
                     }
+                    onWheel={(e) => e.target.blur()}
                     className={inputClass(errors.thicknessLower)}
                   />
                   <span className="absolute right-4 text-sm top-1/2 -translate-y-1/2 text-black-400 hp:text-xs">
@@ -212,6 +217,7 @@ export function PoleInput({ section, onUpdate, errors }) {
                     onChange={(e) =>
                       onUpdate({ thicknessUpper: e.target.value })
                     }
+                    onWheel={(e) => e.target.blur()}
                     className={inputClass(errors.thicknessUpper)}
                   />
                   <span className="absolute right-4 text-sm top-1/2 -translate-y-1/2 text-black-400 hp:text-xs">
@@ -244,6 +250,7 @@ export function PoleInput({ section, onUpdate, errors }) {
                   type="number"
                   value={section.height}
                   onChange={(e) => onUpdate({ height: e.target.value })}
+                  onWheel={(e) => e.target.blur()}
                   className={inputClass(errors.height)}
                 />
                 <span className="absolute right-4 text-sm top-1/2 -translate-y-1/2 text-black-400 hp:text-xs">
@@ -263,6 +270,7 @@ export function PoleInput({ section, onUpdate, errors }) {
                   type="number"
                   value={section.quantity}
                   onChange={(e) => onUpdate({ quantity: e.target.value })}
+                  onWheel={(e) => e.target.blur()}
                   placeholder="1"
                   min="1"
                   className={inputClass(errors.quantity)}

@@ -76,7 +76,7 @@ export default function LightingPolePages({
             No. {cover?.calculationNumber || ""} P-1
           </div>
 
-          <div className="page-content page1-content">
+          <div className="page1-content">
             {/* 1. Calculation conditions */}
             <h2 className="page1-title">
               <span className="page1-number">1.</span>
@@ -262,7 +262,7 @@ export default function LightingPolePages({
             <div className="page-header">
               No. {cover?.calculationNumber || ""} P-{i + 2}
             </div>
-            <div className="page-content page1-content">{pageBlocks}</div>
+            <div className="page1-content">{pageBlocks}</div>
           </div>
         </div>
       ))}

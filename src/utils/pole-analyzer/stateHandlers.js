@@ -29,14 +29,14 @@ export const updateStructuralDesign = (
 // ====================================================
 // Function for Pole Input
 // ====================================================
-// FUNCTION: Add a new step (max 4 step)
+// FUNCTION: Add a new step (max 6 step)
 export const addSection = (
   sections,
   setSections,
   setActiveTab,
   sectionIdRef,
 ) => {
-  if (sections.length >= 4) return;
+  if (sections.length >= 6) return;
 
   sectionIdRef.current += 1;
   const newId = sectionIdRef.current.toString();

@@ -780,7 +780,7 @@ export function PoleStructuralAnalyzer() {
                   <h2 className="text-[#0d3b66] text-sm flex items-center gap-1 hp:text-xs hp:flex hp:items-start">
                     <div className="w-1 h-5 bg-[#3399cc] rounded-full mr-1 hp:h-4"></div>
                     <span className="font-semibold">
-                      Configure up to 4 Step Poles
+                      Configure up to 6 Step Poles
                     </span>
                     <span className=" font-medium hp:hidden">
                       with detailed specifications
@@ -790,10 +790,10 @@ export function PoleStructuralAnalyzer() {
                 {/* BUTTON ADD SECTION */}
                 <button
                   onClick={handleAddSection}
-                  disabled={sections.length >= 4}
+                  disabled={sections.length >= 6}
                   className={`flex items-center gap-2 text-sm px-7 py-3 rounded-lg font-medium transition-all shadow-md 
                   ${
-                    sections.length >= 4
+                    sections.length >= 6
                       ? "bg-gray-300 text-black opacity-40 cursor-not-allowed"
                       : "bg-gradient-to-r from-[#0d3b66] to-[#3399cc] text-white hover:shadow-xl transition-transform duration-300 hover:scale-105"
                   } hp:text-xs hp:px-[22px] hp:py-[10px] hp:self-center`}
@@ -804,7 +804,7 @@ export function PoleStructuralAnalyzer() {
               </div>
 
               {/* TABS SECTION */}
-              <div className="flex items-center gap-2 overflow-x-auto pb-2 hp:gap-2 hp:px-2 hp:justify-center">
+              <div className="flex items-center gap-2 overflow-x-auto whitespace-nowrap pb-2 hp:gap-2 hp:px-2 hp:justify-start scroll-smooth scrollbar-hide">
                 {sections.map((section, index) => {
                   const isComplete = handleIsSectionComplete(section);
                   const isActive = activeTab === section.id;

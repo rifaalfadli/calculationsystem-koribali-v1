@@ -32,6 +32,7 @@ export function StructuralDesign({ structuralDesign, onUpdate, errors }) {
                 type="number"
                 value={structuralDesign.lowestStep}
                 onChange={(e) => onUpdate({ lowestStep: e.target.value })}
+                onWheel={(e) => e.target.blur()}
                 className={`${inputClass(errors.lowestStep)} pr-10 hp:pr-10`}
               />
               <span className="absolute right-4 top-1/2 -translate-y-1/2 text-sm text-black-400 hp:text-xs">
@@ -51,6 +52,7 @@ export function StructuralDesign({ structuralDesign, onUpdate, errors }) {
                 type="number"
                 value={structuralDesign.overDesign}
                 onChange={(e) => onUpdate({ overDesign: e.target.value })}
+                onWheel={(e) => e.target.blur()}
                 className={`${inputClass(errors.overDesign)} pr-14 hp:pr-10`}
               />
               <span className="absolute right-4 top-1/2 -translate-y-1/2 text-sm text-black-400 hp:text-xs">

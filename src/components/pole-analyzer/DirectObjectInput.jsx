@@ -93,6 +93,7 @@ export function DirectObjectInput({
               placeholder="Object Count"
               value={doInputValue}
               onChange={(e) => setDoInputValue(e.target.value)}
+              onWheel={(e) => e.target.blur()}
               className="
                 w-[180px] px-7 py-2.5 text-center text-sm rounded-lg outline-none
                 transition-all border border-[#3399cc] bg-white
@@ -370,6 +371,7 @@ export function DirectObjectInput({
                           frontAreaDo: e.target.value,
                         })
                       }
+                      onWheel={(e) => e.target.blur()}
                       className={`${inputClass(doError.frontAreaDo)} pr-6 hp:py-[9.5px] hp:pr-6`}
                     />
                     <span className="absolute right-2 top-1/2 -translate-y-1/2 text-xs text-black-400">
@@ -394,6 +396,7 @@ export function DirectObjectInput({
                             sideAreaDo: e.target.value,
                           })
                         }
+                        onWheel={(e) => e.target.blur()}
                         className={`${inputClass(doError.sideAreaDo)} pr-6 hp:pr-6`}
                       />
                       <span className="absolute right-2 top-1/2 -translate-y-1/2 text-xs text-black-400">
@@ -421,6 +424,7 @@ export function DirectObjectInput({
                           weightDo: e.target.value,
                         })
                       }
+                      onWheel={(e) => e.target.blur()}
                       className={`${inputClass(doError.weightDo)} pr-6 hp:pr-6`}
                     />
                     <span className="absolute right-2 top-1/2 -translate-y-1/2 text-xs text-black-400">
@@ -444,6 +448,7 @@ export function DirectObjectInput({
                           heightDo: e.target.value,
                         })
                       }
+                      onWheel={(e) => e.target.blur()}
                       className={`${inputClass(doError.heightDo)} pr-8 hp:pr-8`}
                     />
                     <span className="absolute right-2 top-1/2 -translate-y-1/2 text-xs text-black-400">
@@ -464,6 +469,7 @@ export function DirectObjectInput({
                     onChange={(e) =>
                       onUpdate(directObject.idDo, { nncDo: e.target.value })
                     }
+                    onWheel={(e) => e.target.blur()}
                     className={inputClass(doError.nncDo)}
                   />
                   <ErrorText show={doError.nncDo} text="Required field" />
@@ -481,6 +487,7 @@ export function DirectObjectInput({
                       onChange={(e) =>
                         onUpdate(directObject.idDo, { qtyDo: e.target.value })
                       }
+                      onWheel={(e) => e.target.blur()}
                       className={`${inputClass(doError.qtyDo)} pr-8 hp:pr-8`}
                     />
                     <span className="absolute right-2 top-1/2 -translate-y-1/2 text-xs text-black-400">
@@ -505,6 +512,7 @@ export function DirectObjectInput({
                             fixAngleDo: e.target.value,
                           })
                         }
+                        onWheel={(e) => e.target.blur()}
                         className={`${inputClass(doError.fixAngleDo)} pr-8 hp:pr-8`}
                       />
                       <span className="absolute right-2 top-1/2 -translate-y-1/2 text-xs text-black-400">
