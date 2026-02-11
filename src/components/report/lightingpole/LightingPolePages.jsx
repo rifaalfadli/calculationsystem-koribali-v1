@@ -63,7 +63,7 @@ export default function LightingPolePages({
             <img
               src="/images/YSpole2.png"
               alt="logo YS"
-              className="mx-auto w-[300px]"
+              className="mx-auto w-[300px] h-auto"
             />
           </div>
         </div>
