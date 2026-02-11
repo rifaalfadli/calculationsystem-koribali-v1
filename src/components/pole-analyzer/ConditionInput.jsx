@@ -10,6 +10,29 @@ export function ConditionInput({ condition, onUpdate, onNext, errors }) {
     });
   };
 
+  const projectTypeOptions = {
+    act: [{ value: "acemast", label: "Acemast" }],
+    v60: [
+      { value: "acemast", label: "Acemast" },
+      { value: "signboard", label: "Signboard" },
+      { value: "multiple", label: "Multiple" },
+      { value: "lightingPole", label: "Lighting Pole" },
+      { value: "gantri", label: "Gantri" },
+    ],
+    tower: [{ value: "acemast", label: "Acemast" }],
+    jil: [
+      { value: "multiple", label: "Multiple" },
+      { value: "lightingPole", label: "Lighting Pole" },
+      { value: "cameraPole", label: "Camera Pole" },
+    ],
+    haiden: [
+      { value: "acemast", label: "Acemast" },
+      { value: "multiple", label: "Multiple" },
+      { value: "lightingPole", label: "Lighting Pole" },
+    ],
+    signboard: [{ value: "signboard", label: "Signboard" }],
+  };
+
   // Function to helper class input
   const inputClass = (hasError) =>
     `w-full px-4 py-2.5 rounded-lg outline-none transition-all border text-sm pr-12
@@ -40,10 +63,12 @@ export function ConditionInput({ condition, onUpdate, onNext, errors }) {
             </label>
             <select
               value={condition.designStandard}
-              onChange={(e) => onUpdate({ designStandard: e.target.value })}
+              onChange={(e) =>
+                onUpdate({ designStandard: e.target.value, projectType: "" })
+              }
               className={inputClass(errors.designStandard)}
             >
-              <option value="" disabled selected>
+              <option value="" disabled>
                 Select Design Standard
               </option>
               <option value="act">Standard Acts. (Law)</option>
@@ -80,21 +105,32 @@ export function ConditionInput({ condition, onUpdate, onNext, errors }) {
             <label className="block text-sm text-gray-700 mb-2 hp:text-xs hp:mb-1">
               Project Type
             </label>
+
             <select
               value={condition.projectType}
               onChange={(e) => onUpdate({ projectType: e.target.value })}
-              className={inputClass(errors.projectType)}
+              className={`${inputClass(errors.projectType)} disabled:opacity-60`}
+              disabled={!condition.designStandard}
             >
-              <option value="" disabled selected>
+              <option value="" disabled>
                 Select Project Type
               </option>
-              <option value="acemast">Acemast</option>
-              <option value="signboard">Signboard</option>
-              <option value="cameraPole">Camera Pole</option>
-              <option value="multiple">Multiple</option>
-              <option value="lightingPole">Lighting Pole</option>
-              <option value="gantri">Gantri</option>
+
+              {(projectTypeOptions[condition.designStandard] || []).map(
+                (item) => (
+                  <option key={item.value} value={item.value}>
+                    {item.label}
+                  </option>
+                ),
+              )}
             </select>
+
+            {!condition.designStandard && (
+              <p className="absolute right-0 -bottom-4 text-[11px] text-gray-500 hp:text-[9px]">
+                Please select a design standard first.
+              </p>
+            )}
+
             <ErrorText show={errors.projectType} text="Required field" />
           </div>
         </div>
